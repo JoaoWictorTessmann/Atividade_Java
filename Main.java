@@ -1,16 +1,10 @@
 public class Main {
     public static void main (String[] args){
-        Cachorro meuCachorro = new Cachorro();
-        meuCachorro.setNome("Rex");
-        meuCachorro.raca = "Vira-Lata";
-        
-        Cachorro outroCachorro = new Cachorro();
-        outroCachorro.setNome("Apollo");
-        outroCachorro.raca = "Labrador";
+        Cachorro meuCachorro = new Cachorro("Apollo", "Vira-lata Caramelo");
 
+        System.out.println("Nome:" + meuCachorro.getNome());
+        System.out.println("Raca:" + meuCachorro.getRaca());
         meuCachorro.latir();
-        outroCachorro.latir();
-
-        System.out.println("A raça do " + meuCachorro.getNome() + " é " + meuCachorro.raca);
+        meuCachorro.comer();
     }
 }

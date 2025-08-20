@@ -1,25 +1,18 @@
-public class Cachorro {
+public class Cachorro extends Animal {
 
-    private String nome; //variavel nome para o cachorro
-    //set e get nome
-    public void setNome(String novoNome) {
-        this.nome = novoNome;
-    }
-    public String getNome() {
-        return this.nome;
-    }
-
-    String raca; //variavel raca para o cachorro
-    //set e get raca
-    public void setRaca(String novaRaca) {
-        this.raca = novaRaca;
-    }
-    public String GetRaca() {
-        return this.raca;
+    private String raca; //variavel nome para o cachorro
+    
+    //busca o nome da herança Animal. e atribui tambem a raca descrita no getRaca nessa class
+    public Cachorro (String nome, String raca){
+        super(nome);
+        this.raca = raca;
     }
 
     //print latir
     public void latir() {
-        System.out.println("O cachorro " + nome + " está latindo: Au Au!");
+        System.out.println(getNome() +" está latindo: Au Au!");
+    }
+    public String getRaca(){
+        return raca;
     }
 }

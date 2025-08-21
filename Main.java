@@ -1,10 +1,13 @@
 public class Main {
+    public static void escutarSom(Animal animal){
+        System.out.println("Ouvindo o som do animal... ");
+        animal.fazerSom();
+    }
     public static void main (String[] args){
-        Cachorro meuCachorro = new Cachorro("Apollo", "Vira-lata Caramelo");
-
-        System.out.println("Nome:" + meuCachorro.getNome());
-        System.out.println("Raca:" + meuCachorro.getRaca());
-        meuCachorro.latir();
-        meuCachorro.comer();
+        Animal rex = new Cachorro("Rex", "Pintcher");
+        Animal Apollo = new Cachorro("Apollo", "Pit-Bull");
+        
+        escutarSom(rex);
+        escutarSom(Apollo);
     }
 }

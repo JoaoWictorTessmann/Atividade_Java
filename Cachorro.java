@@ -12,7 +12,13 @@ public class Cachorro extends Animal {
     public void latir() {
         System.out.println(getNome() +" está latindo: Au Au!");
     }
+    
     public String getRaca(){
         return raca;
+    }
+
+    @Override
+    public void fazerSom(){
+        System.out.println(getNome()+ " late : Au Au!");
     }
 }

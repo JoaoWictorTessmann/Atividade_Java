@@ -8,6 +8,10 @@ public class Animal {
     public void comer(){
         System.out.println(this.nome + "está comendo...");
     }
+
+    public void fazerSom(){
+        System.out.println("O animal faz um som.");
+    }
     public String getNome(){
         return this.nome;
     }
